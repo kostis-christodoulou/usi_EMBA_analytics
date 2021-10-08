@@ -10,15 +10,21 @@ library(zoo) # to calculate rolling  averages of last k polls
 # while it's fine to know about working directories, I suggest 
 # you learn to use the package 'here' that makes organising files easy
 # https://malco.io/2018/11/05/why-should-i-use-the-here-package/
-german_polls <- read_csv(here::here('data', 'german_polls.csv'))
+german_polls <- read_csv(here::here('data', 'german_election_polls.csv'))
+
 
 
 my_data <- german_polls %>% 
+  pivot_longer(
+    cols = 5:10,
+    names_to = "party",
+    values_to = "percent"
+  ) %>% 
+  select(-c(4:7)) %>% 
+
+
   mutate(
-    
-    # get month and week number from the date, if we want to do analysis by month- week, etc.
-    month = month(end_date, label=TRUE, abbr=TRUE),
-    week = isoweek(end_date),
+    end_date = dmy(end_date),
     party = factor(party, 
                         levels = c("CDU/CSU", "SPD", "GRUNE", "FDP", "AFD", "LINKE")
     )) %>% 
@@ -47,7 +53,7 @@ ggplot(my_data, aes(x=end_date, y= percent, colour=party))+
   scale_colour_manual(values=my_colour_palette)+
   geom_smooth(se=F)+
   theme_minimal()+
-  scale_x_date(date_minor_breaks = "1 month")+
+  scale_x_date(date_breaks = "15 days")+
   labs(
     title = "Opinion polling for the 2021 German federal election",
     subtitle = "Polls since Jan 2021",
