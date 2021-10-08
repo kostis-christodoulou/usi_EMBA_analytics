@@ -1,0 +1,214 @@
+height,family_size,exercise_hrs,online_hrs,sleep_hours,last_haircut,homeopathy_works,lied_about_age,marijuana,handedness,success_outside_our_control,work_hard_to_succeed,kids_vs_parents,woman_top_position,stress_day,stress_analytics,motivation,facebook_friends,gender
+175,3,2,40,7,120,1,1,1,0.9,Disagree,8,Better off,Having children later in her career,4,2,5,1100,Female
+175,3,4,20,8,7,0,0,0,1,Disagree,8,Better off,Having children later in her career,5,5,5,600,Male
+169,2,5,45,9,25,0,0,0,1,Agree,8,Better off,Not having children at all,3,2,4,0,Female
+178,2,3,28,8,25,0,0,1,0.72,Disagree,8,Worse off,Having children later in her career,3,2,4,740,Male
+166,2,4,30,8,130,0,1,1,1,Disagree,8,Worse off,Having children later in her career,2,2,4,868,Female
+177,2,6,30,7,38,0,0,0,1,Disagree,9,Worse off,Having children later in her career,3,3,5,1400,Male
+185,3,12,70,7,40,0,1,1,0.79,Disagree,10,Better off,Not having children at all,3,1,5,417,Male
+175,2,0,35,7,10,0,0,1,-1,Disagree,9,Better off,Having children later in her career,2,2,5,900,Male
+167,3,4,60,9,35,1,1,0,1,Disagree,10,Worse off,Having children later in her career,2,5,5,1394,Female
+174,2,2,40,7,25,0,1,1,0.68421,Disagree,9,Better off,Having children later in her career,4,2,5,2389,Male
+172,2,5,65,7,50,1,0,1,1,Disagree,9,Better off,Having children later in her career,3,3,5,964,Female
+165,2,0,15,8,6.75,1,0,0,1,Agree,8,Better off,Having children later in her career,4,4,5,1775,Female
+180,1,3.5,80,7,7,0,0,0,0.82,Disagree,8,Better off,Having children later in her career,3,2,5,323,Male
+179,4,4,10,7,25,1,1,1,0.3,Disagree,8,Worse off,Having children later in her career,2,4,5,1000,Male
+166,2,3,28,8.5,22,1,1,0,0.41,Disagree,7,Better off,Having children later in her career,3,2,5,1517,Female
+191,1,6,20,7,32.81,0,0,1,0.9,Disagree,6,Better off,Not having children at all,3,2,4,391,Male
+170,0,9,63,9,25,1,1,1,1,Disagree,10,Better off,Having children later in her career,1,1,5,1576,Male
+165,2,5,28,7,15,1,0,0,1,Disagree,7,Better off,Having children later in her career,3,2,5,1086,Female
+170,2,3,14,10,49,1,1,1,0.4,Disagree,8,Better off,Having children later in her career,2,1,5,833,Female
+165,2,5,21,8,50,1,1,1,1,Agree,10,Better off,Having children later in her career,3,3,5,700,Female
+178,2,5,35,8,9.5,0,1,1,0.556,Disagree,8,Worse off,Having children early on in her career,2,3,5,514,Male
+175,1,2,70,7.5,5,0,0,0,1,Disagree,6,Better off,Having children later in her career,3,3,5,90,Male
+178,2,4,20,6,94.5,1,0,1,-1,Agree,8,Better off,Having children later in her career,3,2,5,1672,Female
+163,1,7,28,7,20,0,0,0,0.81,Disagree,10,Better off,Having children later in her career,3,2,5,267,Female
+168,1,0,30,10,7,1,1,NA,0.5,Disagree,10,Better off,Not having children at all,2,1,5,91,Female
+170,0,9,63,9,25,1,1,1,1,Disagree,10,Better off,Having children later in her career,1,1,5,1576,Male
+163,1,4,50,8,10,1,0,0,1,Disagree,8,Better off,Having children early on in her career,3,4,5,10,Female
+163,3,2,40,7,33,1,0,NA,1,Disagree,8,Worse off,Having children later in her career,3,3,5,340,Female
+178,4,8,30,6,0,1,0,1,0.54,Disagree,10,Better off,Having children later in her career,3,1,5,653,Male
+162,2,2,16,7,50,1,1,1,1,Disagree,8,Worse off,Not having children at all,3,1,4,700,Female
+188,3,3,30,7,30,0,1,1,0.7,Disagree,8,Worse off,Not having children at all,2,1,4,1255,Male
+1.78,2,6,10,8,50,0,1,0,1,Disagree,10,Better off,Not having children at all,3,3,5,913,Male
+186,2,4,60,7,25,1,1,1,0.368,Disagree,6,Better off,Having children later in her career,3,4,4,973,Male
+175,3,2,40,7,120,1,1,1,0.9,Disagree,8,Better off,Having children later in her career,4,2,5,1100,Female
+176,0,10,56,9,60,0,1,1,0.9,Agree,9,Worse off,Having children early on in her career,4,3,5,430,Female
+166,1,7,60,6,50,1,0,0,-0.87,Disagree,9,Worse off,Not having children at all,4,2,4,41,Female
+174,1,4,50,9,20,1,0,0,1,Disagree,8,Better off,Having children later in her career,3,1,5,1000,Male
+169,2,5,45,9,25,0,0,0,1,Agree,8,Better off,Not having children at all,3,2,4,0,Female
+188,2,10.5,56,7,30,0,1,0,1,Disagree,10,Better off,Having children later in her career,2,4,4,1200,Male
+188,2,5,25,8,6,0,1,0,0.8,Agree,8,Better off,Not having children at all,4,2,4,570,Male
+176,1,10,50,8,25,1,0,0,-1,Disagree,8,Better off,Having children later in her career,2,4,5,500,Male
+172,4,3,50,8,50,1,0,0,0.6,Agree,9,Better off,Having children later in her career,4,2,4,1500,Female
+170,1,0,70,8,25,0,0,0,0.3,Agree,8,Better off,Having children later in her career,3,4,4,0,Female
+167.74,2,6,14,7,80,0,1,1,1,Agree,8,Worse off,Not having children at all,4,4,5,1355,Female
+168,1,5,35,7.5,46,1,0,1,0.9,Agree,9,Better off,Having children later in her career,3,4,5,1010,Female
+167,2,3,40,7,80,0,1,1,0.9,Disagree,7,Worse off,Not having children at all,3,3,4,1175,Female
+173,2,3,30,8,20,0,0,1,1,Disagree,9,Better off,NA,3,3,5,753,Male
+169,2,5,45,9,25,0,0,0,1,Agree,8,Better off,Not having children at all,3,2,4,0,Female
+185,3,4,70,7,26,1,1,1,1,Disagree,9,Better off,Not having children at all,3,4,4,1200,Male
+184,2,10,30,8,14,0,1,0,0.4,Disagree,10,Better off,Having children later in her career,4,1,5,190,Male
+175,1,4,28,7,30,1,1,0,0.7,Disagree,10,Worse off,Not having children at all,3,4,4,700,Male
+180,2,2,40,8,20,0,1,1,0.54,Disagree,8,Better off,Having children early on in her career,3,4,5,624,Male
+176,2,8,50,7,25,1,1,1,1,Disagree,10,Worse off,Having children later in her career,3,1,3,1200,Male
+192,2,0,35,8,38.69,0,0,1,0.88,Disagree,8,Worse off,Not having children at all,2,2,5,737,Male
+178,2,1,25,8,90,1,1,0,-1,Agree,8,Worse off,Having children later in her career,3,4,4,761,Female
+171,1,3,40,8,42,1,1,0,-0.333,Disagree,8,Better off,Having children later in her career,3,1,5,281,Female
+1.82,2,5,50,7,35,0,1,1,1,Disagree,8,Better off,Having children later in her career,3,2,4,500,Male
+169,2,8,40,7,15,0,1,1,-0.7,Disagree,7,Better off,Having children later in her career,3,2,4,1098,Male
+171,3,0,15,8,2,1,0,0,0.6,Disagree,10,Worse off,Having children early on in her career,4,3,5,150,Male
+183,1,10,40,7,0,0,1,1,1,Disagree,10,Better off,Not having children at all,2,1,4,350,Male
+161,1,8,70,5,10,1,0,0,1,Disagree,9,Better off,Having children later in her career,2,3,4,47,Female
+165,2,4,6,7,30,0,1,0,1,Disagree,10,Worse off,Having children later in her career,4,3,5,500,Female
+180,2,3,60,7,20,1,1,1,0.67,Disagree,7,Worse off,Having children later in her career,4,1,3,0,Male
+171,3,0,80,7,22,1,0,0,1,Disagree,7,Worse off,Having children later in her career,4,3,5,874,Female
+171,2,6,100,8,65,1,0,0,0.6,Disagree,8,Worse off,Having children later in her career,2,4,5,800,Female
+187,2,2,38,6.5,32,0,0,0,0.4,Disagree,9,Better off,Not having children at all,4,3,5,109,Male
+185,2,3,50,7,3,1,0,0,0.87,Disagree,6,Better off,Having children later in her career,4,2,4,30,Male
+173,1,0,90,8,10,1,0,0,1,Disagree,10,Worse off,Having children later in her career,5,2,5,40,Male
+160,1,2,70,8,15,0,0,0,0.75,Disagree,9,Better off,Not having children at all,4,3,4,500,Female
+187,4,5,50,7,25,1,1,1,0,Disagree,9,Worse off,Not having children at all,5,4,4,1050,Male
+180,1,5,70,7.5,4,0,0,0,0.83,Disagree,9,Better off,Having children early on in her career,3,2,5,20,Male
+177.8,2,3,50,9,5,1,0,0,0.667,Disagree,8,Worse off,Having children later in her career,4,2,5,977,Female
+194,1,5,30,5,32,0,1,1,0.47,Disagree,10,Better off,Having children early on in her career,3,1,5,80,Male
+183,2,2,30,7.5,13,0,1,1,-0.82,Disagree,8,Worse off,Not having children at all,3,3,4,356,Male
+187,3,3,80,8,20,0,1,1,0.7,Disagree,9,Better off,Not having children at all,2,2,4,800,Male
+191,2,8,20,7.5,27.22,0,1,1,0.6,Disagree,8,Better off,Having children later in her career,3,1,5,609,Male
+178,2,4,24,7.5,25,1,1,1,0.5,Disagree,7,Better off,Having children early on in her career,2,2,4,1000,Male
+164,2,0,60,6.5,65,0,0,1,1,Disagree,10,Better off,Having children later in her career,3,3,4,280,Female
+187,4,7,24,7,0,0,0,0,0.8,Agree,8,Better off,Not having children at all,3,2,5,1100,Male
+180,0,5,50,7,3,0,0,0,1,Disagree,10,Better off,Not having children at all,4,4,5,0,Male
+203,2,5,45,7,30,1,0,1,0.411,Disagree,6,Better off,Not having children at all,3,4,5,355,Male
+192,1,4,10,7.5,100,1,0,0,0.65,Disagree,7,Worse off,Having children later in her career,2,3,5,190,Male
+168,4,0,25,6,60,1,0,0,0.43,Disagree,10,Better off,Having children early on in her career,3,1,5,527,Female
+189,2,2.5,75,6,26,0,0,0,0.4,Disagree,7,Worse off,Not having children at all,3,1,3,0,Male
+182,4,6,14,4,40,0,1,1,0.85,Disagree,9,Worse off,Having children later in her career,4,4,5,0,Male
+192,2,4,56,6.5,50,0,1,1,1,Disagree,10,Better off,Not having children at all,3,2,4,500,Male
+180,3,5,60,5,39,0,1,1,0.6,Disagree,8,Better off,Having children early on in her career,2,1,3,541,Male
+188,2,3.5,35,8,95,0,1,1,1,Disagree,9,Better off,Not having children at all,2,3,2,545,Male
+185,2,5,100,5,20,0,0,0,1,Disagree,10,Better off,Not having children at all,4,4,5,289,Male
+163,2,2,8,7,40,1,1,0,1,Disagree,8,Worse off,Having children later in her career,4,1,4,400,Female
+181,4,4,50,7,33,1,1,0,0.6,Disagree,9,Better off,Not having children at all,3,1,5,700,Male
+170,1,6,28,6,35,0,1,1,1,Disagree,10,Worse off,Not having children at all,5,4,4,0,Male
+176,1,4,40,7,2,1,1,1,1,Agree,7,Better off,Not having children at all,4,3,4,500,Male
+192,3,3,28,7,14,0,1,1,1,Agree,7,Better off,Not having children at all,2,1,5,1200,Male
+175,4,8,65,6,20,1,0,1,1,Disagree,10,Worse off,Not having children at all,3,2,5,1000,Female
+185,3,5,50,8,20.5,0,0,1,-1,Disagree,8,Worse off,Having children later in her career,2,1,5,984,Male
+192,3,3,28,7,14,0,1,1,1,Agree,7,Better off,Not having children at all,2,1,5,1200,Male
+190,2,3,60,6,40,0,1,1,-1,Agree,7,Better off,Not having children at all,3,1,5,1200,Male
+177,1,4,55,7,40,0,1,0,0.8,Disagree,10,Better off,NA,2,3,5,1000,Male
+181,3,2,35,7,11,1,0,0,-0.5,Disagree,10,Better off,Having children early on in her career,4,3,4,800,Male
+185,5,50,80,5,1,0,0,0,1,Agree,1,Better off,Having children early on in her career,5,2,5,4850,Male
+1.8,6,15,20,4,8,1,0,0,1,Agree,10,Better off,Having children early on in her career,3,4,5,1000,Male
+182,11,72,15,4,0.92037,1,0,0,1,Agree,8,Better off,Having children early on in her career,3,4,4,4800,Male
+1.73,6,8,10,5,0.55,1,1,0,1,Disagree,9,Better off,Having children later in her career,3,2,4,416,Male
+175,3,1,4,4,0.3,0,1,0,1,Disagree,10,Worse off,Having children early on in her career,4,3,4,2.542,Male
+170,13,35,15,6,0.5,1,0,0,1,Disagree,1,Better off,Having children later in her career,2,3,4,100,Male
+1.69,4,70,50,7,6,0,1,0,1,Agree,10,Worse off,Not having children at all,4,4,5,402,Male
+171,1,4,35,7,200,0,1,0,-0.8,Disagree,7,Worse off,Not having children at all,3,3,5,900,Female
+160,2,2,28,7,10,1,0,0,1,Disagree,8,Worse off,Having children later in her career,4,4,5,1000,Female
+153,2,2,50,10,20,0,1,0,1,Agree,6,Better off,Not having children at all,2,4,3,1600,Female
+160,1,4,70,8,40,0,1,0,1,Disagree,8,Better off,Having children later in her career,4,4,3,50,Female
+158,2,14,21,5,0,0,0,0,0.54,Disagree,9,Better off,Having children later in her career,3,2,5,0,Female
+173,2,8,20,7,4,0,1,1,1,Agree,8,Worse off,Not having children at all,2,2,4,707,Male
+171,2,5,40,8,20,1,0,0,0.9,Disagree,8,Better off,Having children early on in her career,4,3,5,840,Female
+171,3,6,30,7,25,0,1,0,-0.26,Disagree,8,Better off,Having children later in her career,3,3,5,1020,Male
+176,1,8,40,7,12,0,0,0,1,Agree,5,Better off,Having children later in her career,3,4,4,90,Male
+166,1,7,60,7,250,0,0,0,1,Disagree,8,Better off,Not having children at all,2,2,4,5,Female
+168,1,5,50,8,80,0,1,1,0.73,Disagree,6,Better off,Not having children at all,2,4,5,20,Female
+175,1,7,60,8,8,1,0,0,1,Disagree,8,Worse off,Having children early on in her career,3,4,5,100,Male
+169,2,1,75,8,5,1,1,0,1,Disagree,10,Worse off,Having children early on in her career,4,5,5,10,Male
+160,1,2.5,30,8,30,0,0,NA,1,Disagree,6,NA,NA,3,1,4,0,Female
+178,0,8,30,9,5,0,0,0,1,Agree,10,Better off,Having children early on in her career,2,1,5,26,Male
+180,1,5,70,8,25,1,1,1,0.9,Disagree,7,Better off,Not having children at all,3,1,4,642,Male
+175,0,2,70,8,28,1,0,0,1,Disagree,10,Better off,Having children later in her career,2,3,5,430,Male
+170,2,6,80,6,6,0,0,1,1,Disagree,8,Worse off,Not having children at all,3,3,5,827,Female
+178,2,10,40,8,4,1,0,0,1,Disagree,10,Better off,Having children later in her career,3,2,5,1181,Male
+184,2,6,20,7,25,0,1,1,0.6923,Disagree,7,Worse off,Having children later in her career,2,1,4,1069,Male
+164,2,0,50,7,22,1,0,0,1,Agree,6,Better off,Having children later in her career,2,4,5,2120,Female
+180,3,0,7,8,9,1,1,1,1,Disagree,8,Worse off,Having children early on in her career,3,2,5,300,Male
+178,2,4,70,6,9,0,1,0,1,Disagree,8,Better off,Having children later in her career,4,3,5,1011,Male
+178,1,3,80,7,5,0,0,0,1,Disagree,10,Better off,Having children later in her career,3,3,5,0,Male
+172,2,7,20,8,40,0,0,0,1,Disagree,10,Better off,Having children early on in her career,4,5,5,350,Male
+180,1,5,60,7,1,0,0,0,0.33,Disagree,6,Better off,NA,3,2,4,746,Male
+167.64,3,3,60,8,30,1,0,1,0.6,Disagree,8,Better off,Having children later in her career,3,2,4,656,Female
+190,2,2,30,7,30,0,1,1,1,Disagree,8,Worse off,Not having children at all,3,2,4,1311,Male
+152,3,5,20,7,600,1,0,0,1,Agree,3,Better off,Having children later in her career,1,4,2,1000,Male
+172,0,5,20,8,40,1,0,0,1,Disagree,9,Better off,Not having children at all,3,2,5,500,Female
+178,3,5,60,8,30,0,1,NA,1,Disagree,7,Better off,Not having children at all,2,2,5,0,Male
+170,2,3,50,7,25,0,0,0,0.875,Disagree,8,Better off,Having children later in her career,3,1,5,400,Male
+167,2,5,60,7,10,0,0,0,1,Disagree,8,Better off,Having children early on in her career,4,4,5,800,Female
+162,1,2,15,7,80,0,0,0,0.84,Disagree,8,Better off,Not having children at all,3,NA,NA,200,Female
+180,2,6,40,7,30,0,0,NA,1,Disagree,4,Better off,Not having children at all,2,3,4,1500,Male
+188,2,4,65,9,0,0,0,0,1,Agree,9,Worse off,Not having children at all,3,3,5,10,Male
+168,3,4,10,8,10,1,1,1,1,Agree,10,Better off,Not having children at all,3,2,4,700,Female
+167,3,4,70,6,15,1,1,1,1,Disagree,8,Better off,Having children later in her career,4,4,5,2047,Female
+161,1,7,35,7,6,0,0,0,0.9,Disagree,7,Better off,Having children early on in her career,4,3,4,67,Female
+166,1,5,30,7,20,1,0,0,0.7,Agree,9,Better off,Not having children at all,3,3,5,15,Female
+169,3,0,21,7,40,0,1,1,0.4,Agree,8,Worse off,Not having children at all,3,5,4,400,Female
+165,3,5,60,6,45,0,1,0,1,Disagree,10,Worse off,Not having children at all,4,1,5,800,Male
+177,1,5,42,6.5,30,0,1,0,-0.71,Disagree,8,Worse off,Having children later in her career,3,2,5,1000,Female
+182,3,2,12,8.5,30,0,0,NA,0.85,Disagree,10,Worse off,Not having children at all,3,3,5,550,Male
+174,2,2,45,8,50,1,1,NA,0.6,Disagree,7,Better off,Having children later in her career,3,1,5,349,Female
+173,1,10,56,7,30,0,0,1,0.8,Agree,7,Worse off,Not having children at all,4,4,5,900,Female
+170,1,2,40,8,200,1,0,0,1,Agree,8,Better off,Having children later in her career,4,4,5,579,Female
+170,3,5,40,7,30,0,1,NA,1,Disagree,7,Worse off,Not having children at all,3,1,4,1000,Female
+186,3,4,50,7.5,26.45,0,1,1,1,Disagree,9,Worse off,Not having children at all,2,4,4,1285,Male
+188,3,5,50,6,50,1,0,1,0.625,Disagree,9,Better off,Having children early on in her career,3,1,5,0,Male
+164,1,6,60,7,10,1,0,0,1,Disagree,7,Better off,Having children later in her career,4,3,4,20,Female
+169,4,1,6,7,50,0,1,1,1,Disagree,8,Better off,Having children later in her career,3,4,5,945,Female
+165,1,0,70,7,17,1,0,0,1,Disagree,9,Better off,Having children later in her career,4,4,4,1000,Female
+184,3,10,25,8,15,1,1,1,-0.73,Disagree,10,Better off,Having children later in her career,3,4,5,818,Male
+157,3,10,50,7,7,1,0,0,1,Agree,10,Better off,NA,4,5,5,1000,Female
+163,0,2,60,9,60,1,0,0,1,Disagree,4,Better off,Not having children at all,4,3,5,5,Female
+180,3,2,70,9,83,0,0,0,0.7,Disagree,9,Worse off,Not having children at all,4,4,4,464,Male
+164,1,0,56,8,25,0,0,0,0.5,Disagree,7,Worse off,Not having children at all,3,2,4,183,Female
+191,2,3.5,70,7,4,1,0,0,0.17,Disagree,9,Better off,Having children early on in her career,3,3,4,1186,Male
+172,2,3,56,7,23.9,0,0,0,0.764,Disagree,9,Worse off,Having children later in her career,3,2,4,848,Female
+165,3,4,12,8,80,1,0,0,1,Disagree,10,Worse off,Having children later in her career,2,3,5,1000,Female
+182.5,2,7,30,6,8,0,1,0,0.07,Disagree,10,Worse off,Having children early on in her career,5,1,1,1403,Male
+160,2,7,20,8,15,1,0,1,1,Disagree,8,Better off,Having children later in her career,3,3,4,1509,Female
+187,4,3,16,8,28,0,1,1,0.8,Disagree,8,Better off,Having children later in her career,2,2,4,463,Male
+183,1,8,42,8.5,5,0,0,0,0.2,Disagree,8,Better off,Not having children at all,3,1,4,0,Male
+175,1,1,50,7,5,0,1,0,0.7,Disagree,9,Better off,Having children early on in her career,3,4,3,233,Male
+175,2,2,12,8,25,0,0,0,0.8,Disagree,8,Better off,Not having children at all,3,4,4,50,Female
+171.45,3,4,6,9,70,0,1,0,0.6,Disagree,9,Better off,Having children later in her career,4,5,5,409,Female
+166,2,2,30,7,50,0,0,0,0.9,Disagree,9,Worse off,Having children later in her career,4,4,4,0,Female
+167,1,3,85,8,70,1,0,0,0.44,Disagree,7,Worse off,Not having children at all,4,5,2,5,Female
+178,4,2,10,8,80,1,1,1,-0.5,Disagree,9,Worse off,Not having children at all,3,2,5,1056,Female
+179,2,6,30,7,13,1,1,1,1,Disagree,8,Better off,Having children later in her career,3,4,5,40,Male
+155,1,10,50,7,25,0,0,0,0.54,Disagree,7,Better off,Having children later in her career,4,3,4,47,Female
+172,2,3,10,7,60,1,0,0,0.6,Disagree,9,Better off,Not having children at all,4,3,5,329,Female
+190,5,10,50,8,20,1,1,0,1,Disagree,7,NA,Having children later in her career,4,2,5,52,Male
+172,2,4,8,11,30,0,1,1,1,Agree,8,Worse off,Having children later in her career,3,4,5,988,Female
+183,3,2,20,9,40,0,1,1,0.8,Disagree,8,Better off,Having children later in her career,4,1,5,947,Female
+170,2,4,54,8,9,1,0,1,0.2,Disagree,9,Worse off,Not having children at all,3,4,4,800,Male
+175,1,5.5,68,7,10,1,0,0,1,Disagree,7,Better off,Not having children at all,3,2,5,0,Male
+184,3,5,15,7.5,25,0,0,1,0.75,Disagree,8,Worse off,Having children early on in her career,2,3,5,300,Male
+184,8,0,10,8,30,0,0,1,1,Disagree,9,Worse off,Not having children at all,3,3,5,800,Male
+183,3,2,20,7,16,0,1,1,1,Disagree,9,Better off,Having children later in her career,3,4,5,1357,Male
+165,1,2,21,7,20,0,0,0,1,Agree,5,Better off,Having children early on in her career,3,3,5,100,Female
+181,2,7,50,7,5,1,0,0,0.73,Disagree,10,Better off,Having children later in her career,4,4,5,600,Male
+170,3,2,40,8,20,0,0,0,1,Disagree,10,Better off,Not having children at all,3,1,4,600,Female
+167,2,4,60,6,15,0,0,0,1,Agree,10,Worse off,Not having children at all,3,2,5,200,Male
+182,2,0,70,7,15,0,0,1,0.53,Disagree,7,Worse off,Not having children at all,3,2,4,452,Male
+160,1,1.5,20,8,5,1,0,0,0.8,Disagree,8,Worse off,Having children early on in her career,3,1,4,2,Female
+186,3,10,80,7.5,14,1,1,0,1,Agree,NA,Better off,Having children later in her career,3,1,4,1500,Male
+185,1,2,50,7,13.5,0,0,1,0.8,Disagree,8,Worse off,Having children later in her career,3,1,4,212,Male
+170,1,2,20,7,6,0,0,0,1,Agree,8,Better off,Having children later in her career,3,3,5,1,Male
+191,3,10,70,8,20,1,1,0,1,Disagree,10,Better off,Not having children at all,3,2,4,1500,Male
+177,2,3,30,7,30,0,0,0,0.95,Agree,10,Better off,Having children later in her career,2,2,4,30,Male
+163,3,0,50,7,30,1,1,0,1,Disagree,10,Better off,Not having children at all,3,3,3,100,Female
+177,3,10,40,7,15,1,1,0,0.764705882,Disagree,7,Better off,Having children later in her career,4,3,4,600,Male
+181,2,8,20,8,50,1,1,NA,0.65,Disagree,10,Better off,Having children later in her career,4,2,5,722,Male
+189,4,1,49,7.5,48,0,0,1,-0.22,Disagree,8,Worse off,Having children early on in her career,4,3,4,1103,Male
+162,1,3,42,7,5,0,0,0,0.33,Agree,8,Better off,Having children later in her career,3,2,4,0,Female
+160,2,0,44,9,70,1,1,1,1,Disagree,8,Better off,Having children later in her career,2,2,4,851,Female
+175,1,2,100,7.5,60,0,0,0,0.53,Agree,3,Worse off,Having children later in her career,2,1,4,0,Male
+189,3,4,80,6,10,0,0,0,1,Disagree,10,Better off,Having children later in her career,NA,4,5,500,Male
+195,2,6,45,7,15,0,1,1,1,Agree,7,Worse off,Not having children at all,2,1,5,420,Male
+168,0,5,70,8,20,1,0,0,1,Disagree,9,Better off,Having children later in her career,2,3,5,224,Female
+184,6,7,20,8,0,1,1,1,0.76,Disagree,10,Worse off,Having children later in her career,4,1,5,370,Male
+162,1,5,50,8,40,1,0,0,-1,Disagree,8,Better off,Having children later in her career,4,4,4,200,Female
+183,1,4,40,7,60,0,0,0,1,Agree,7,Better off,Having children early on in her career,4,2,4,3,Male
