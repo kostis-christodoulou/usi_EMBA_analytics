@@ -23,7 +23,7 @@ The goal is to test your software installation, to demonstrate competency in Mar
 
 You should successfully install R and R studio in your computer. We will do all of our work in this class with the open source (and free!) programming language [R](https://cran.r-project.org/). However, we will use [RStudio](https://www.rstudio.com/) as the main program to access R.
 
-You can find details on how to [install both R and R studio here](https://usi-emba-analytics.netlify.app/reference/01-reference/)
+You can find details on how to [install both R and R studio here](https://mfa2022.netlify.app/reference/01-reference/)
 
 ## Install `tidyverse`, `gapminder` and `here` packages
 
@@ -37,7 +37,7 @@ You can also just paste and run these commands
 
 in the `console` (bottom left in RStudio) instead of using the packages panel.
 
-You can find details on [installing the tidyverse here](https://usi-emba-analytics.netlify.app/reference/02-reference)
+You can find details on [installing the tidyverse here](https://mfa2022.netlify.app/reference/02-reference)
 
 ## Practice using Markdown
 
