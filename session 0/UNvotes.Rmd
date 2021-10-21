@@ -65,8 +65,8 @@ in each year. We'll visualize the results, so let's pick a few countries of
 interest first,
 
 ```{r country-list}
-country_list <- c("United States", "China", 
-                  "United Kingdom", "India")
+country_list <- c("United States", "Greece", 
+                  "United Kingdom", "Italy")
 ```
 
 and focus our analysis on them.

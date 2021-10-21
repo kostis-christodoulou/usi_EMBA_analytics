@@ -1,0 +1,27 @@
+groups,city,URL
+,Amsterdam,http://data.insideairbnb.com/the-netherlands/north-holland/amsterdam/2021-09-07/data/listings.csv.gz
+,Bangkok,http://data.insideairbnb.com/thailand/central-thailand/bangkok/2021-09-28/data/listings.csv.gz
+,Barcelona,http://data.insideairbnb.com/spain/catalonia/barcelona/2021-09-10/data/listings.csv.gz
+,Beijing,http://data.insideairbnb.com/china/beijing/beijing/2021-09-28/data/listings.csv.gz
+,Berlin,http://data.insideairbnb.com/germany/be/berlin/2021-09-21/data/listings.csv.gz
+,Brussels,http://data.insideairbnb.com/belgium/bru/brussels/2021-09-24/data/listings.csv.gz
+,Buenos Aires,http://data.insideairbnb.com/argentina/ciudad-aut%C3%B3noma-de-buenos-aires/buenos-aires/2021-09-28/data/listings.csv.gz
+,Cape Town,http://data.insideairbnb.com/south-africa/wc/cape-town/2021-09-29/data/listings.csv.gz
+,Copenhagen,http://data.insideairbnb.com/denmark/hovedstaden/copenhagen/2021-09-30/data/listings.csv.gz
+,Greek islands,http://data.insideairbnb.com/greece/south-aegean/south-aegean/2021-09-21/data/listings.csv.gz
+,Hong Kong,http://data.insideairbnb.com/china/hk/hong-kong/2021-09-24/data/listings.csv.gz
+,Istanbul,http://data.insideairbnb.com/turkey/marmara/istanbul/2021-09-30/data/listings.csv.gz
+,Madrid,http://data.insideairbnb.com/spain/comunidad-de-madrid/madrid/2021-09-10/data/listings.csv.gz
+,Mexico City,http://data.insideairbnb.com/mexico/df/mexico-city/2021-09-28/data/listings.csv.gz
+,Milan,http://data.insideairbnb.com/italy/lombardy/milan/2021-09-19/data/listings.csv.gz
+,Montreal,http://data.insideairbnb.com/canada/qc/montreal/2021-09-14/data/listings.csv.gz
+,Munich,http://data.insideairbnb.com/germany/bv/munich/2021-09-28/data/listings.csv.gz
+,Prague,http://data.insideairbnb.com/czech-republic/prague/prague/2021-09-24/data/listings.csv.gz
+,Rio de Janeiro,http://data.insideairbnb.com/brazil/rj/rio-de-janeiro/2021-09-28/data/listings.csv.gz
+,Rome,http://data.insideairbnb.com/italy/lazio/rome/2021-09-12/data/listings.csv.gz
+,San Francisco,http://data.insideairbnb.com/united-states/ca/san-francisco/2021-10-06/data/listings.csv.gz
+,Shanghai,http://data.insideairbnb.com/china/shanghai/shanghai/2021-09-28/data/listings.csv.gz
+,Singapore,http://data.insideairbnb.com/singapore/sg/singapore/2021-09-29/data/listings.csv.gz
+,Stockholm,http://data.insideairbnb.com/sweden/stockholms-l%C3%A4n/stockholm/2021-09-30/data/listings.csv.gz
+,Sydney,http://data.insideairbnb.com/australia/nsw/sydney/2021-09-08/data/listings.csv.gz
+,Vienna,http://data.insideairbnb.com/austria/vienna/vienna/2021-09-12/data/listings.csv.gz
