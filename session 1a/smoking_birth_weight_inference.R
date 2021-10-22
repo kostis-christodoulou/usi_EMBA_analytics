@@ -18,7 +18,7 @@ skimr::skim(smoking_birth_weight)
 
 # how many mothers were smokers vs non smokers in our sample?
 smoking_birth_weight %>% 
-  count(habit, sort=TRUE) %>% 
+  count(habit, sort=TRUE) %>% # count() is equivalent to group_by()... summarise()
   mutate(proportion = n/sum(n))
 
 # lowbirthweight is defined as weight_kg < 2.50
