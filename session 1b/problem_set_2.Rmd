@@ -144,6 +144,9 @@ comparison <- tidyweather %>%
     TRUE ~ "2011-present"
   ))
 
+
+favstats(delta ~ interval, data = comparison)
+
 ```
 
 Inspect the `comparison` dataframe by clicking on it in the `Environment` pane.
