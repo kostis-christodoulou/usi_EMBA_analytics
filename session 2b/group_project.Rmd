@@ -1,6 +1,6 @@
 ---
 title: "Final Group Project: AirBnB analytics"
-date: "12 Oct 2021"
+date: "24 Oct 2021"
 author: "Reading Time: About 8 minutes"
 output:
   html_document:
@@ -45,8 +45,6 @@ library(vroom)
 
 
 In your final group assignment you have to analyse data about Airbnb listings and fit a model to predict the total cost for two people staying 4 nights in an AirBnB in a city. You can download AirBnB data from [insideairbnb.com](http://insideairbnb.com/get-the-data.html){target="_blank"}; it was originally scraped from airbnb.com. 
-
-The following [Google sheet](https://docs.google.com/spreadsheets/d/1QrR-0PUGVWvDiVQL4LOk7w-xXwiDnM3dDtW6k15Hc7s/edit?usp=sharing) shows which cities you can use; please choose one of them and add your group name next to it, e.g., A7, B13. No city can have more than 2 groups per stream working on it; if this happens, I will allocate study groups to cities with the help of R's sampling.
 
 
 All of the listings are a GZ file, namely they are archive files compressed by the standard GNU zip (gzip) compression algorithm. You can download, save and extract the file if you wanted, but `vroom::vroom()` or `readr::read_csv()` can immediately read and extract this kind of a file. You should prefer `vroom()` as it is faster, but if vroom() is limited by a firewall, please use `read_csv()` instead.
