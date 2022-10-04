@@ -3,7 +3,7 @@ library(mosaic)
 library(here)
 library(lubridate)
 library(skimr)
-
+library(ggiraph) # interactive graphs
 
 #read the CSV file
 bike <- read_csv(here::here("data", "london_bikes.csv"))
@@ -11,10 +11,8 @@ bike <- read_csv(here::here("data", "london_bikes.csv"))
 # fix dates using lubridate, and generate new variables for year, month, month_name, day, and day_of _week
 bike <- bike %>%   
   mutate(
-    year=year(day),
-    month = month(day),
-    month_name=month(day, label = TRUE),
-    day_of_week = wday(day, label = TRUE)) 
+    month = month(date),
+    month_name=month(date, label = TRUE)) 
 
 # generate new variable season_name to turn seasons from numbers to Winter, Spring, etc
 bike <- bike %>%  
@@ -26,7 +24,11 @@ bike <- bike %>%
       month_name %in%  c("Sep", "Oct", "Nov")  ~ "Autumn",
     ),
     season_name = factor(season_name, 
-                         levels = c("Winter", "Spring", "Summer", "Autumn"))
+                         levels = c("Winter", "Spring", "Summer", "Autumn")),
+    weekend = case_when(
+      wday %in%  c("Sat", "Sun")  ~ "Weekend",
+      TRUE  ~ "Weekday",
+    )
   )
 
 # examine what the resulting data frame looks like
@@ -34,10 +36,11 @@ glimpse(bike)
 skim(bike)
 
 
+
 # Time series plot of bikes rented
-ggplot(bike, aes(x=day, y=bikes_hired))+
+ggplot(bike, aes(x=date, y=bikes_hired))+
   geom_smooth()+
-  geom_point(alpha = 0.4)+
+  geom_point(alpha = 0.3)+
   theme_bw()+
   NULL
 
@@ -50,7 +53,8 @@ favstats(~ bikes_hired, data= bike)
 # using the syntax `favstats( Y ~ X, data=...)`
 
 favstats(bikes_hired ~ year, data=bike)
-favstats(bikes_hired ~ day_of_week, data=bike)
+favstats(bikes_hired ~ wday, data=bike)
+favstats(bikes_hired ~ weekend, data=bike)
 favstats(bikes_hired ~ month_name, data=bike)
 favstats(bikes_hired ~ season_name, data=bike)
 
@@ -100,6 +104,9 @@ ggplot(bike, aes(x=bikes_hired))+
   geom_density(aes(fill=season_name), alpha = 0.3)+
   facet_wrap(~season_name, nrow = 4)+
   theme_bw()+
+  
+  #remove legend to the right
+  theme(legend.position = "none")+
   NULL
 
 # Density plot filled by season_name, and faceted by month_name
@@ -139,50 +146,61 @@ ggplot(bike, aes(x=month_name, y= bikes_hired))+
   NULL
 
 
-# Summary stats of bikes hired vs rain and snow
-favstats(bikes_hired ~ i_rain_drizzle, data=bike)
-favstats(bikes_hired ~ i_rain_drizzle + season_name, data=bike)
 
-
-favstats(bikes_hired ~ i_snow_ice, data=bike)
-favstats(bikes_hired ~ i_snow_ice + season_name, data=bike)
-
-#Boxplot of bikes_hired temperature by rain (TRUE/FALSE)
-bike %>% filter(!is.na(i_rain_drizzle)) %>% 
-ggplot( aes(x=factor(i_rain_drizzle), y= bikes_hired))+
-  geom_boxplot()+
+# bikes_hired vs. weather features
+ggplot(bike, aes(x=mean_temp, y= bikes_hired))+
+  geom_point()+
+  geom_smooth(method = "lm", se=FALSE)+
   theme_bw()+
   NULL
 
-#Boxplot of bikes_hired temperature by snow (TRUE/FALSE)
-bike %>% filter(!is.na(i_snow_ice)) %>% 
-ggplot(aes(x=factor(i_snow_ice), y= bikes_hired))+
-  geom_boxplot()+
+ggplot(bike, aes(x=mean_temp, y= bikes_hired, colour=season_name))+
+  geom_point(alpha = 0.2)+
+  geom_smooth(method = "lm", se=FALSE)+
   theme_bw()+
+#  facet_wrap(~season_name, ncol=1)+
   NULL
 
 
-# bikes_hired vs. `temp`, `rh` (relative humidity)`, `slp` (pressure), and `wdsp` (windspeed)
-ggplot(bike, aes(x=temp, y= bikes_hired))+
+
+temperature_by_season <- ggplot(bike, aes(x=mean_temp, y= bikes_hired,colour=season_name)) +
+  
+  # rather than using geom_point(), we use geom_point_interactive()
+  geom_point_interactive(aes( 
+                             tooltip = glue::glue("Mean Temp: {mean_temp}\nBikes Hired: {bikes_hired}\nDate: {date}")),
+                         alpha = 0.3) +
+  geom_smooth_interactive(se = FALSE, method = lm)+
+  theme_bw()+
+  facet_wrap(~season_name, ncol=1)+
+#  facet_grid(season_name ~ weekend)+
+
+    theme(legend.position = "none")+
+  NULL
+
+# you have created the ggplot object, you now pass it to
+girafe(
+  ggobj = temperature_by_season
+)
+
+######
+ggplot(bike, aes(x=humidity, y= bikes_hired))+
   geom_point()+
   geom_smooth(method = "lm")+
   theme_bw()+
   NULL
 
-ggplot(bike, aes(x=rh, y= bikes_hired))+
+ggplot(bike, aes(x=humidity, y= bikes_hired, colour=season_name))+
+  geom_point(alpha=1/4)+
+  geom_smooth(method = "lm")+
+  theme_bw()+
+  facet_wrap(~season_name, ncol=1)+
+  NULL
+
+ggplot(bike, aes(x=pressure, y= bikes_hired))+
   geom_point()+
   geom_smooth(method = "lm")+
   theme_bw()+
   NULL
 
-ggplot(bike, aes(x=slp, y= bikes_hired))+
-  geom_point()+
-  geom_smooth(method = "lm")+
-  theme_bw()+
-  NULL
-
-ggplot(bike, aes(x=wdsp, y= bikes_hired))+
-  geom_point()+
-  geom_smooth(method = "lm")+
-  theme_bw()+
-  NULL
+# weather features
+# https://www.ecad.eu/dailydata/datadictionarycountry.php?43il4bgek4lvi88fdri9d8sn97
