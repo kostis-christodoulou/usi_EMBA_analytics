@@ -248,30 +248,218 @@ Does it appear that whether or not a respondent believes the earth is warming is
 
 You may want to read on [The challenging politics of climate change](https://www.brookings.edu/research/the-challenging-politics-of-climate-change/)
 
-# Biden's Approval Margins
 
-As we saw in class, fivethirtyeight.com has detailed data on [all polls that track the president's approval ](https://projects.fivethirtyeight.com/biden-approval-ratings)
+# Returns of financial stocks
 
-```{r, cache=TRUE}
-# Import approval polls data directly off fivethirtyeight website
-approval_polllist <- read_csv('https://projects.fivethirtyeight.com/biden-approval-data/approval_polllist.csv') %>% 
-  mutate(enddate = mdy(enddate))
 
-glimpse(approval_polllist)
+> You may find useful the material on [finance data sources](https://mfa2023.netlify.app/reference/finance_data/). 
 
-# Use `lubridate` to fix dates, as they are given as characters.
+We will use the `tidyquant` package to download historical data of stock prices, calculate returns, and examine the distribution of returns. 
+
+We must first identify which stocks we want to download data for, and for this we must know their ticker symbol; Apple is known as AAPL, Microsoft as MSFT, McDonald's as MCD, etc. The file `nyse.csv` contains 508 stocks listed on the NYSE, their ticker `symbol`, `name`, the IPO  (Initial Public Offering) year, and the sector and industry the company is in.
+
+
+```{r load_nyse_data, message=FALSE, warning=FALSE}
+nyse <- read_csv(here::here("data","nyse.csv"))
 ```
 
-## Create a plot
+Based on this dataset, create a table and a bar plot that shows the number of companies per sector, in descending order
 
-What I would like you to do is to calculate the average net approval rate (approve- disapprove) for each week since he got into office. I want you plot the net approval, along with its 95% confidence interval. There are various dates given for each poll, please use `enddate`, i.e., the date the poll ended.
+```{r companies_per_sector}
 
-Also, please add an orange line at zero. Your plot should look like this:
+# YOUR CODE GOES HERE
 
-```{r trump_margins, echo=FALSE, out.width="100%"}
-knitr::include_graphics(here::here("images", "biden_approval_margin.png"), error = FALSE)
+
 ```
 
+
+Next, let's choose the [Dow Jones Industrial Aveareg (DJIA)](https://en.wikipedia.org/wiki/Dow_Jones_Industrial_Average) stocks and their ticker symbols and download some data. Besides the thirty stocks that make up the DJIA, we will also add `SPY` which is an SP500 ETF (Exchange Traded Fund). The following code 
+
+
+```{r, tickers_from_wikipedia}
+
+djia_url <- "https://en.wikipedia.org/wiki/Dow_Jones_Industrial_Average"
+
+
+#get tables that exist on URL
+tables <- djia_url %>% 
+  read_html() %>% 
+  html_nodes(css="table")
+
+
+# parse HTML tables into a dataframe called djia. 
+# Use purr::map() to create a list of all tables in URL
+djia <- map(tables, . %>% 
+               html_table(fill=TRUE)%>% 
+               clean_names())
+
+
+# constituents
+table1 <- djia[[2]] %>% # the second table on the page contains the ticker symbols
+  mutate(date_added = ymd(date_added),
+         
+         # if a stock is listed on NYSE, its symbol is, e.g., NYSE: MMM
+         # We will get prices from yahoo finance which requires just the ticker
+         
+         # if symbol contains "NYSE*", the * being a wildcard
+         # then we jsut drop the first 6 characters in that string
+         ticker = ifelse(str_detect(symbol, "NYSE*"),
+                          str_sub(symbol,7,11),
+                          symbol)
+         )
+
+# we need a vector of strings with just the 30 tickers + SPY
+tickers <- table1 %>% 
+  select(ticker) %>% 
+  pull() %>% # pull() gets them as a sting of characters
+  c("SPY") # and lets us add SPY, the SP500 ETF
+
+```
+
+Now let us downlaod prices for all 30 DJIA consituents and the SPY ETF that tracks SP500 since January 1, 2020
+
+
+```{r get_price_data, message=FALSE, warning=FALSE, cache=TRUE}
+# Notice the cache=TRUE argument in the chunk options. Because getting data is time consuming, # cache=TRUE means that once it downloads data, the chunk will not run again next time you knit your Rmd
+
+myStocks <- tickers %>% 
+  tq_get(get  = "stock.prices",
+         from = "2000-01-01",
+         to   = Sys.Date()) %>% # Sys.Date() returns today's price
+  group_by(symbol) 
+
+glimpse(myStocks) # examine the structure of the resulting data frame
+```
+
+Financial performance analysis depend on returns; If I buy a stock today for 100 and I sell it tomorrow for 101.75, my one-day return, assuming no transaction costs, is 1.75%. So given the adjusted closing prices, our first step is to calculate daily and monthly returns.
+
+
+Financial performance analysis depend on returns; If I buy a stock today for 100 and I sell it tomorrow for 101.75, my one-day return, assuming no transaction costs, is 1.75%. So given the adjusted closing prices, our first step is to calculate daily and monthly returns.
+
+
+```{r calculate_returns, message=FALSE, warning=FALSE, cache=TRUE}
+#calculate daily returns
+myStocks_returns_daily <- myStocks %>%
+  tq_transmute(select     = adjusted, 
+               mutate_fun = periodReturn, 
+               period     = "daily", 
+               type       = "log",
+               col_rename = "daily_returns",
+               cols = c(nested.col))  
+
+#calculate monthly  returns
+myStocks_returns_monthly <- myStocks %>%
+  tq_transmute(select     = adjusted, 
+               mutate_fun = periodReturn, 
+               period     = "monthly", 
+               type       = "arithmetic",
+               col_rename = "monthly_returns",
+               cols = c(nested.col)) 
+
+#calculate yearly returns
+myStocks_returns_annual <- myStocks %>%
+  group_by(symbol) %>%
+  tq_transmute(select     = adjusted, 
+               mutate_fun = periodReturn, 
+               period     = "yearly", 
+               type       = "arithmetic",
+               col_rename = "yearly_returns",
+               cols = c(nested.col))
+```
+
+Create a table where you summarise monthly returns for each of the stocks and `SPY`; min, max, median, mean, SD.
+
+```{r summarise_monthly_returns}
+
+# YOUR CODE GOES HERE
+
+```
+
+
+Plot a density plot, using `geom_density()`, for each of the stocks
+```{r density_monthly_returns}
+
+# YOUR CODE GOES HERE
+
+```
+
+What can you infer from this plot? Which stock is the riskiest? The least risky? 
+
+
+> TYPE YOUR ANSWER AFTER (AND OUTSIDE!) THIS BLOCKQUOTE.
+
+Finally, make a plot that shows the expected monthly return (mean) of a stock on the Y axis and the risk (standard deviation) in the X-axis. Please use `ggrepel::geom_text_repel()` to label each stock
+
+```{r risk_return_plot}
+# YOUR CODE GOES HERE
+
+```
+
+What can you infer from this plot? Are there any stocks which, while being riskier, do not have a higher expected return?
+
+
+
+# Challenge 1: Opinion polls for the 2021 German elections
+
+Wikipedia has a page on [Opinion polling for the next UK general election](https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_United_Kingdom_general_election). Your task is to reproduce a graph similar to the one produced by Wikipedia 
+
+
+```{r german_election_polls, echo=FALSE, out.width="90%"}
+knitr::include_graphics(here::here("images", "uk_opinion_polls.png"), error = FALSE)
+```
+
+The following code will scrape the wikipedia page and import the 2022 opinion polls in a dataframe. 
+You do *NOT* have to have the same legend and colours, just different lines for the different parties. Please rememebr that: 
+
+- `geom_point()` will draw a point for each opinion poll
+- geom_smooth(se=FALSE)` will draw the best fit line
+
+```{r, scrape_wikipedia_polling_data, warnings= FALSE, message=FALSE}
+
+# Wikipedia URL with all opinion polls for the next UK general election
+# we just want the 2022 opinion polls
+url <- "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_United_Kingdom_general_election"
+
+
+
+# get tables that exist on wikipedia page 
+tables <- url %>% 
+  read_html() %>% 
+  html_nodes(css="table")
+
+
+# parse HTML tables into a dataframe called polls 
+# Use purr::map() to create a list of all tables in URL
+polls <- map(tables, . %>% 
+               html_table(fill=TRUE)%>% 
+               janitor::clean_names())
+
+
+# list of opinion polls
+uk_election_polls <- polls[[2]] %>% # the first table on the page contains the list of all opinions polls
+  slice(2:(n())) %>%  # drop the first row, as it contains again the variable names
+  
+  # drop row that contains text on by-elections, changes in leadership, etc 
+  slice(-c(3, 61, 127, 169, 219, 242 )) %>% 
+  
+  mutate(
+
+    # extract date it by picking the last 6 characters from the 'datesconducted' field
+    date = paste0(str_sub(datesconducted, -6)," 2022"),
+    
+    # and pass it to lubridate::dmy() to turn it into a date object 
+    date = lubridate::dmy(date),
+    
+    # parse all numbers from characters to numbers
+    samplesize = parse_number(samplesize),
+    con = parse_number(con),
+    lab = parse_number(lab),
+    lib_dem = parse_number(lib_dem),
+    snp = parse_number(snp),
+    green = parse_number(green),
+    reform = parse_number(reform)
+  )
+```
 
 # Deliverables
 
