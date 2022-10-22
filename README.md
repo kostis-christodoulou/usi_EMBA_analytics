@@ -1,4 +1,4 @@
-# USI EMBA 10 Analytics
+# USI EMBA 11 Analytics
 
 All course files (data, code, etc.) used in EMBA 11 Analytics, Sep-Oct 2022
 
